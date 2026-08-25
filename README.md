@@ -1,63 +1,79 @@
+<div align="center">
+
 # Amit
 
-I like exploring the internet, building things, and turning small problems in my own workflow into real tools.
+I build the tools I wish were already sitting on my desktop.
 
-Most of what I build starts with a simple question: "What do I wish existed right now?" Then I try to make the first useful version, test it in my own day, and keep improving it until it becomes something I actually rely on.
+Agents, dashboards, little internet machines, workflow monitors, scrappy automations, and whatever else removes friction from the way I actually work.
 
-## What I'm Building
+</div>
 
-### Hermes
+---
 
-Hermes is the bigger vision I am working toward: a practical command center for agents, automations, and internet-native workflows.
+## The Thread
 
-The idea is to make AI agents easier to run, monitor, direct, and trust. I want tools that let me spin up agents for real work, see what they are doing, understand when they need input, and connect them into workflows that solve actual problems instead of just producing demos.
+I am not trying to make a portfolio of random tutorial projects.
 
-The direction I care about:
+I am building toward **Hermes**: a personal command center for agents and internet work.
 
-- Agent dashboards that show state, progress, context, and blockers
-- Tools for coordinating multiple agents without losing track of the work
-- Local-first monitoring for long-running coding sessions
-- Practical automation around the messy parts of building on the internet
-- Interfaces that make agent work visible, interruptible, and useful
+The vision is simple: if AI agents are going to do real work, I need a place where I can see them, steer them, interrupt them, trust them, and connect them into useful workflows. Not a demo. Not a chat box. A working cockpit for the messy reality of building things online.
 
-## Featured Project
+That means I keep circling the same problems:
 
-### [Codex Session Monitor](https://github.com/amitwjace-creator/codex-session-monitor)
+- What is every agent doing right now?
+- Which one is blocked, waiting, looping, or finished?
+- What context does it have?
+- What did it change?
+- What should run automatically, and what should stop and ask me?
+- How do I make all of this feel like a tool instead of a science project?
 
-A local dashboard and looping alarm for OpenAI Codex CLI session completion alerts.
+Hermes is the north star. The repos here are the pieces I am making on the way there.
 
-This came from a real problem: I would start a Codex task, switch context, and miss the moment it finished or needed input. So I built a monitor that watches local Codex session activity and alerts me when something changes.
+## Built From Annoyance
 
-- Watches local Codex session state in real time
-- Shows running, waiting, finished, and error states
-- Sends visual, audio, and browser notification alerts
-- Tracks task history, duration, token usage, and reset data when available
-- Runs locally with Node.js and static HTML/CSS/JS
+Most of my projects start because something bothered me enough times.
 
-## How I Build
+I do not want to babysit long-running coding sessions. I do not want to miss when an agent finishes. I do not want five tabs, three terminals, and a vague feeling that something is happening somewhere. I want my tools to tell me what is going on.
 
-I am interested in useful, scrappy, working software:
+So I build the smallest useful version, use it, break it, fix what hurts, and keep moving.
 
-- Build the thing I personally need
-- Keep the first version simple enough to ship
-- Use it in real workflows
-- Improve the parts that hurt
-- Share the pieces that could help other people
+## Current Artifact
 
-I care less about perfect polish on day one and more about whether the tool solves a real problem.
+| Project | Why it exists | Status |
+| --- | --- | --- |
+| [codex-session-monitor](https://github.com/amitwjace-creator/codex-session-monitor) | A local dashboard and alarm for Codex sessions, built because I kept missing when tasks finished or needed input. | Working, public, actively shaped by my own use |
 
-## Current Focus
+`codex-session-monitor` is the first visible piece of the Hermes direction: local state, agent awareness, completion alerts, usage data, and a dashboard that makes invisible work visible.
 
-- Hermes and agent orchestration
-- Codex tooling and session monitoring
-- Local-first developer utilities
-- Lightweight dashboards for automation workflows
-- Small internet products that solve practical problems
+## What I Am Exploring
 
-## Tech I Reach For
+```text
+Hermes
+├─ agent command center
+├─ Codex session visibility
+├─ local-first workflow monitors
+├─ internet automation experiments
+├─ small tools that solve my own problems
+└─ interfaces for directing many agents without losing the plot
+```
 
-JavaScript, Node.js, browser APIs, GitHub Actions, CLI tooling, local file watchers, dashboards, automation scripts, and whatever else gets the idea working.
+I like building on the internet because the feedback loop is immediate. You can have an idea in the morning, a rough version by the afternoon, and a better understanding of the problem by night.
 
-## Open Thread
+## Biases
 
-I am still early in public-building this account. Expect experiments, practical tools, agent workflow ideas, and projects that come from real things I wanted to use myself.
+- Useful beats impressive.
+- Working beats theoretical.
+- Local-first when the data is personal.
+- Dashboards should reduce anxiety, not create more of it.
+- Agents need observability before they can be trusted with bigger work.
+- A small tool used every day is more interesting than a polished thing nobody needs.
+
+## Stack
+
+JavaScript, Node.js, browser APIs, GitHub Actions, CLI tooling, local files, dashboards, automation scripts, and agent workflows.
+
+The stack can change. The pattern is the same: build the thing, use the thing, improve the thing.
+
+## Now
+
+I am turning this account into a public trail of the Hermes work: agent tools, monitoring utilities, local-first dashboards, and experiments that come from real problems I run into while building.
