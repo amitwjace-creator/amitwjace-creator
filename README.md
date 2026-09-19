@@ -214,9 +214,10 @@ I am interested in meeting people working on **AI agents, computer vision, HCI, 
 
 If you are building something in that world, exploring similar ideas, or think two projects should collide, I would like to hear about it.
 
-**GitHub:** [@amitwjace-creator](https://github.com/amitwjace-creator)
+[![Instagram](https://img.shields.io/badge/Instagram-@amitbenshachar-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/amitbenshachar/)
+[![GitHub](https://img.shields.io/badge/GitHub-@amitwjace--creator-181717?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator)
 
-> Social links will go here once the accounts are explicitly connected — no guessed usernames.
+**Instagram:** [@amitbenshachar](https://www.instagram.com/amitbenshachar/) · **GitHub:** [@amitwjace-creator](https://github.com/amitwjace-creator)
 
 ---
 
