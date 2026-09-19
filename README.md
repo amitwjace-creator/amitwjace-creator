@@ -79,7 +79,9 @@ LATENCY  ~45–65 ms result age
 
 I am also experimenting with **OpenVINO** optimization and a precision-focused Object Pointer prototype.
 
-[![Explore barehands](https://img.shields.io/badge/EXPLORE-barehands-111827?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator/barehands)
+[![JACE build log](https://img.shields.io/badge/FOLLOW-JACE_BUILD_LOG-00AEEF?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator)
+
+<sub>Transparency matters: my public <a href="https://github.com/amitwjace-creator/barehands">barehands repository</a> is an experimental fork of <a href="https://github.com/jaredrhod/barehands">Jared Rhodenizer’s original project</a>. JACE’s own Gesture Lab and Object Pointer work are being developed separately inside the JACE repository.</sub>
 
 ### 🤖 Agent infrastructure
 
@@ -205,8 +207,8 @@ The common thread is **leverage**: giving one person better ways to see, think, 
 
 | Project | What it explores |
 | :--- | :--- |
-| **[barehands](https://github.com/amitwjace-creator/barehands)** | Camera-based gesture and spatial interaction |
-| **[codex-session-monitor](https://github.com/amitwjace-creator/codex-session-monitor)** | Visibility and monitoring for coding-agent sessions |
+| **[codex-session-monitor](https://github.com/amitwjace-creator/codex-session-monitor)** | My local-first dashboard and completion-alert system for Codex CLI sessions |
+| **[barehands — experimental fork](https://github.com/amitwjace-creator/barehands)** | A fork of [Jared Rhodenizer’s original project](https://github.com/jaredrhod/barehands), used to study hand-tracked spatial interfaces |
 
 *The main JACE repository is private because the project has a strict boundary between public code and personal data.*
 
@@ -223,6 +225,32 @@ The common thread is **leverage**: giving one person better ways to see, think, 
 06  Then connect the pieces.
 07  Keep shipping the progress, not just the final result.
 ```
+
+---
+
+## Build with me
+
+I want this profile to create working relationships—not just collect followers.
+
+I am especially interested in collaborating with people working on:
+
+- **Computer vision & HCI** — hand tracking, pointer stabilization, gesture design and low-latency interaction
+- **Local AI infrastructure** — voice, memory, privacy-preserving context and always-on systems
+- **Agent tooling** — observability, reliability and better interfaces for long-running agents
+- **Physical computing** — ESP32, sensors, smart-room automation, wearables and projected interfaces
+
+### Open contribution paths
+
+| Issue | What you can help build | Scope |
+| :--- | :--- | :--- |
+| **[#1 · Completion-log retention](https://github.com/amitwjace-creator/codex-session-monitor/issues/1)** | Safe configurable cleanup for long-running installations | Backend + tests |
+| **[#2 · Partial JSONL integration tests](https://github.com/amitwjace-creator/codex-session-monitor/issues/2)** | Reliability coverage for live Codex session writes | Node.js testing |
+| **[#3 · Task-duration trend chart](https://github.com/amitwjace-creator/codex-session-monitor/issues/3)** | An accessible, dependency-free dashboard visualization | Frontend + accessibility |
+
+Each is documented with context, constraints and acceptance criteria. Comment on the issue with your approach, or open a focused pull request.
+
+[![Good first issues](https://img.shields.io/badge/GOOD_FIRST_ISSUES-OPEN-7057ff?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator/codex-session-monitor/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
+[![Contributing](https://img.shields.io/badge/CONTRIBUTING-GUIDE-008672?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator/codex-session-monitor/blob/main/CONTRIBUTING.md)
 
 ---
 
