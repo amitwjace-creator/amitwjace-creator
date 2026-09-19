@@ -11,6 +11,12 @@
 [![GitHub](https://img.shields.io/badge/GitHub-amitwjace--creator-181717?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator)
 [![JACE](https://img.shields.io/badge/PROJECT-JACE-00AEEF?style=for-the-badge)](https://github.com/amitwjace-creator/JACE)
 
+<br />
+
+<img src="./assets/lab/jace-workspace.jpg" width="100%" alt="The room where JACE is being built — Amit’s current workspace" />
+
+<sub><b>THE CURRENT LAB</b> — a bedroom, a workstation, and the beginning of a real-world AI system.</sub>
+
 </div>
 
 ---
@@ -111,8 +117,20 @@ The long-term picture is a room where cameras provide perception, microphones pr
 
 I am documenting the build as it develops: the room, server setup, electronics, prototypes, failures, redesigns and the moments where something that felt like science fiction starts working on a real desk.
 
-> **This section is intentionally ready for original workshop/progress photography.**
-> Personal room photos will be added here rather than using images I do not own.
+<table>
+<tr>
+<td width="33%" align="center"><img src="./assets/lab/local-server.jpg" width="100%" alt="Old PC being repurposed as the local JACE server" /></td>
+<td width="33%" align="center"><img src="./assets/lab/ram-upgrade.jpg" width="100%" alt="RAM upgrade for the JACE server" /></td>
+<td width="33%" align="center"><img src="./assets/lab/gesture-lab.jpg" width="100%" alt="Early MediaPipe Gesture Lab prototype" /></td>
+</tr>
+<tr>
+<td align="center"><b>01 · Local infrastructure</b><br><sub>Giving an old PC a second life as JACE’s always-on local server.</sub></td>
+<td align="center"><b>02 · Hardware upgrade</b><br><sub>Installing 16 GB of RAM to prepare the machine for real workloads.</sub></td>
+<td align="center"><b>03 · First spatial prototype</b><br><sub>Early MediaPipe testing: pinching and dragging UI elements by hand.</sub></td>
+</tr>
+</table>
+
+> JACE did not begin in a research lab. It began here: repurposed hardware, a laptop camera, and the decision to turn a cinematic idea into working systems—one prototype at a time.
 
 ---
 
