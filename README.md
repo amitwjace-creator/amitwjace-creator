@@ -8,12 +8,12 @@
 
 *Inspired by the idea behind Tony Stark's lab: technology that understands the room, responds naturally, remembers context, and turns intent into action.*
 
-[![GitHub](https://img.shields.io/badge/GitHub-amitwjace--creator-181717?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator)
-[![JACE](https://img.shields.io/badge/PROJECT-JACE-00AEEF?style=for-the-badge)](https://github.com/amitwjace-creator/JACE)
+[![GitHub](https://img.shields.io/badge/GitHub-amitwjace--creator-181717?style=flat-square&logo=github)](https://github.com/amitwjace-creator)
+[![JACE](https://img.shields.io/badge/PROJECT-JACE-00AEEF?style=flat-square)](https://github.com/amitwjace-creator/JACE)
 
-<br />
+<br>
 
-<img src="./assets/lab/jace-workspace.jpg" width="100%" alt="The room where JACE is being built — Amit’s current workspace" />
+<img src="./assets/lab/jace-workspace.jpg" width="100%" alt="The room where JACE is being built — Amit’s current workspace">
 
 <sub><b>THE CURRENT LAB</b> — a bedroom, a workstation, and the beginning of a real-world AI system.</sub>
 
@@ -25,37 +25,21 @@
 
 > **A modular, real-world AI system — not just a chatbot.**
 
-JACE is my long-term attempt to build the kind of computing environment that made Tony Stark's workshop so compelling: voice, vision, memory, spatial interaction, automation and hardware behaving like parts of one system.
+JACE is my long-term attempt to build the kind of computing environment that made Tony Stark's workshop so compelling: **voice, vision, memory, spatial interaction, automation, and hardware behaving as one system.**
 
 The goal is not to recreate a movie prop. It is to take that interaction philosophy and see how much of it can be built with real hardware and software.
 
-```text
-                         ┌──────────────┐
-                         │     JACE     │
-                         │ intelligence │
-                         └──────┬───────┘
-                                │
-        ┌───────────────┬───────┼───────┬───────────────┐
-        ▼               ▼       ▼       ▼               ▼
-     PERCEPTION        VOICE   MEMORY  SPATIAL        AUTOMATION
-   cameras + CV       speech   context  gestures      room + tools
-        │               │       │       │               │
-        └───────────────┴───────┼───────┴───────────────┘
-                                ▼
-                         REAL-WORLD ACTION
-```
-
-### The system I am working toward
+### System architecture
 
 | System | Direction |
 | :--- | :--- |
-| 👁️ **Perception** | Cameras, object detection, people, presence and scene understanding |
-| 🎙️ **Voice** | Wake word, speech recognition, reasoning and natural responses |
-| 🧠 **Memory** | Searchable long-term context, vector retrieval and Obsidian |
-| 🖐️ **Spatial control** | Hand tracking, pointing, pinch, drag, swipe and two-hand interaction |
-| 🏠 **Smart room** | Presence-aware devices, routines and physical-world automation |
+| 👁️ **Perception** | Cameras, object detection, people, presence, and scene understanding |
+| 🎙️ **Voice** | Wake word, speech recognition, reasoning, and natural responses |
+| 🧠 **Memory** | Searchable long-term context, vector retrieval, and Obsidian |
+| 🖐️ **Spatial control** | Hand tracking, pointing, pinch, drag, swipe, and two-hand interaction |
+| 🏠 **Smart room** | Presence-aware devices, routines, and physical-world automation |
 | 📽️ **Interface** | A projected, spatial JARVIS-style workspace |
-| ⌚ **Wearable** | A future always-available endpoint and memory capture layer |
+| ⌚ **Wearable** | An always-available endpoint and memory capture layer |
 | 🔌 **Integrations** | Connecting JACE to the software and services around me |
 
 ---
@@ -64,11 +48,9 @@ The goal is not to recreate a movie prop. It is to take that interaction philoso
 
 ### 🖐️ Spatial Gesture Lab
 
-This is the most developed physical-interface part of JACE so far.
+The most developed physical-interface part of JACE so far.
 
-The current prototypes use **OpenCV + MediaPipe** for real-time hand tracking and support pointing, pinch, drag, swipe, point-hold context and two-hand transformations.
-
-Current tuned target:
+Built with **OpenCV + MediaPipe**, the current prototypes support real-time hand tracking, pointing, pinch, drag, swipe, point-hold context, and two-hand transformations.
 
 ```text
 CAM      29–30 FPS
@@ -79,93 +61,45 @@ LATENCY  ~45–65 ms result age
 
 I am also experimenting with **OpenVINO** optimization and a precision-focused Object Pointer prototype.
 
-[![JACE build log](https://img.shields.io/badge/FOLLOW-JACE_BUILD_LOG-00AEEF?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator)
-
-<sub>Transparency matters: my public <a href="https://github.com/amitwjace-creator/barehands">barehands repository</a> is an experimental fork of <a href="https://github.com/jaredrhod/barehands">Jared Rhodenizer’s original project</a>. JACE’s own Gesture Lab and Object Pointer work are being developed separately inside the JACE repository.</sub>
+<sub>My public <a href="https://github.com/amitwjace-creator/barehands">barehands repository</a> is an experimental fork of <a href="https://github.com/jaredrhod/barehands">Jared Rhodenizer’s original project</a>. JACE’s Gesture Lab and Object Pointer are being developed separately inside the JACE repository.</sub>
 
 ### 🤖 Agent infrastructure
 
-If autonomous agents are doing useful work, I want to know what they are doing without babysitting terminals.
-
-**codex-session-monitor** explores that layer: monitoring sessions, surfacing state, usage and completion, and making background agent work visible.
-
-[![View codex-session-monitor](https://img.shields.io/badge/VIEW-codex--session--monitor-111827?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator/codex-session-monitor)
+**[codex-session-monitor](https://github.com/amitwjace-creator/codex-session-monitor)** explores the observability layer for autonomous agents: surfacing session state, usage, and completion without babysitting terminals.
 
 ---
 
 ## The lab
 
-JACE is being built as a physical system as much as a software project.
-
-The long-term picture is a room where cameras provide perception, microphones provide voice input, local machines run services, displays/projectors provide spatial feedback, and custom electronics become physical endpoints.
-
-```text
-            CAMERA ─────────────┐
-            MICROPHONES ────────┤
-            WEARABLE ───────────┤
-                                ▼
-                         ┌─────────────┐
-                         │    JACE     │
-                         │ local brain │
-                         └──────┬──────┘
-                                │
-             ┌──────────────────┼──────────────────┐
-             ▼                  ▼                  ▼
-        PROJECTED UI       SMART ROOM         COMPUTERS
-        + gestures         + devices          + agents
-```
-
-### From inspiration → workshop → system
-
-I am documenting the build as it develops: the room, server setup, electronics, prototypes, failures, redesigns and the moments where something that felt like science fiction starts working on a real desk.
+JACE is being built as a physical system as much as a software project. Cameras provide perception, microphones provide voice input, local machines run services, displays and projectors provide spatial feedback, and custom electronics become physical endpoints.
 
 <table>
 <tr>
-<td width="33%" align="center"><img src="./assets/lab/local-server.jpg" width="100%" alt="Old PC being repurposed as the local JACE server" /></td>
-<td width="33%" align="center"><img src="./assets/lab/ram-upgrade.jpg" width="100%" alt="RAM upgrade for the JACE server" /></td>
-<td width="33%" align="center"><img src="./assets/lab/gesture-lab.jpg" width="100%" alt="Early MediaPipe Gesture Lab prototype" /></td>
+<td width="33%" align="center"><img src="./assets/lab/local-server.jpg" width="100%" alt="Old PC being repurposed as the local JACE server"></td>
+<td width="33%" align="center"><img src="./assets/lab/ram-upgrade.jpg" width="100%" alt="RAM upgrade for the JACE server"></td>
+<td width="33%" align="center"><img src="./assets/lab/gesture-lab.jpg" width="100%" alt="Early MediaPipe Gesture Lab prototype"></td>
 </tr>
 <tr>
-<td align="center"><b>01 · Local infrastructure</b><br><sub>Giving an old PC a second life as JACE’s always-on local server.</sub></td>
-<td align="center"><b>02 · Hardware upgrade</b><br><sub>Installing 16 GB of RAM to prepare the machine for real workloads.</sub></td>
-<td align="center"><b>03 · First spatial prototype</b><br><sub>Early MediaPipe testing: pinching and dragging UI elements by hand.</sub></td>
+<td align="center"><b>01 · Local infrastructure</b><br><sub>An old PC repurposed as JACE’s always-on local server.</sub></td>
+<td align="center"><b>02 · Hardware upgrade</b><br><sub>16 GB RAM upgrade for real workloads.</sub></td>
+<td align="center"><b>03 · Spatial prototype</b><br><sub>Early MediaPipe testing: pinching and dragging UI elements by hand.</sub></td>
 </tr>
 </table>
 
-> JACE did not begin in a research lab. It began here: repurposed hardware, a laptop camera, and the decision to turn a cinematic idea into working systems—one prototype at a time.
+> JACE did not begin in a research lab. It began here: repurposed hardware, a laptop camera, and the decision to turn a cinematic idea into working systems — one prototype at a time.
 
 ---
 
-## Build log
-
-JACE is not a finished product. That is the point.
-
-```text
-IDEA
-  ↓
-rough prototype
-  ↓
-make it work
-  ↓
-measure what is bad
-  ↓
-rebuild it
-  ↓
-connect it to JACE
-  ↓
-repeat
-```
-
-### Current direction
+## Roadmap
 
 - [x] Establish the JACE repository and architecture
-- [x] Recover and organize the gesture-control prototypes
+- [x] Recover and organize gesture-control prototypes
 - [x] Build a tuned real-time Gesture Lab
 - [x] Build the Object Pointer precision prototype
-- [x] Start OpenVINO optimization work
+- [x] Start OpenVINO optimization
 - [ ] Reliable always-on voice interface
 - [ ] Long-term memory + Obsidian/vector retrieval
-- [ ] Perception pipeline for the room
+- [ ] Room perception pipeline
 - [ ] Smart-room control layer
 - [ ] Projected spatial interface
 - [ ] Wearable JACE endpoint
@@ -173,44 +107,42 @@ repeat
 
 ---
 
-## How I think about building
+## Building philosophy
 
 I am interested in the point where **AI stops being a tab in a browser and becomes infrastructure around you**.
 
-I like projects where software has to interact with messy reality: cameras, latency, microphones, local machines, physical spaces, human gestures and imperfect hardware.
+I like projects where software has to interact with messy reality: cameras, latency, microphones, local machines, physical spaces, human gestures, and imperfect hardware.
 
-My loop is simple:
+<div align="center">
 
 **build → use → notice friction → measure → improve → connect**
+
+</div>
 
 I would rather have an imperfect prototype running in my room than a perfect idea sitting in a document.
 
 ---
 
-## Tools & technologies
+## Stack
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=python,js,nodejs,git,github,windows,linux,vscode&perline=8" alt="Tools and technologies" />
+<img src="https://skillicons.dev/icons?i=python,js,nodejs,git,github,windows,linux,vscode&perline=8" alt="Tools and technologies">
 </p>
 
-**Currently exploring:** computer vision · MediaPipe · OpenCV · OpenVINO · AI agents · local-first systems · vector search · automation · spatial interfaces · embedded hardware
+<p align="center">
+Computer Vision · MediaPipe · OpenCV · OpenVINO · AI Agents · Local-first Systems · Vector Search · Automation · Spatial Interfaces · Embedded Hardware
+</p>
 
 ---
 
-## Beyond JACE
-
-I also experiment with agent workflows and small tools that remove friction from how I build.
-
-The common thread is **leverage**: giving one person better ways to see, think, build and control complex systems.
-
-### Public projects
+## Public projects
 
 | Project | What it explores |
 | :--- | :--- |
-| **[codex-session-monitor](https://github.com/amitwjace-creator/codex-session-monitor)** | My local-first dashboard and completion-alert system for Codex CLI sessions |
-| **[barehands — experimental fork](https://github.com/amitwjace-creator/barehands)** | A fork of [Jared Rhodenizer’s original project](https://github.com/jaredrhod/barehands), used to study hand-tracked spatial interfaces |
+| **[codex-session-monitor](https://github.com/amitwjace-creator/codex-session-monitor)** | Local-first dashboard and completion-alert system for Codex CLI sessions |
+| **[barehands — experimental fork](https://github.com/amitwjace-creator/barehands)** | A fork of [Jared Rhodenizer’s original project](https://github.com/jaredrhod/barehands) used to study hand-tracked spatial interfaces |
 
-*The main JACE repository is private because the project has a strict boundary between public code and personal data.*
+<sub>The main JACE repository is private because the project has a strict boundary between public code and personal data.</sub>
 
 ---
 
@@ -219,55 +151,33 @@ The common thread is **leverage**: giving one person better ways to see, think, 
 ```text
 01  Build things I genuinely want to use.
 02  Prototype before over-planning.
-03  Measure latency, reliability and real-world behavior.
+03  Measure latency, reliability, and real-world behavior.
 04  Keep personal data local and private by default.
 05  Make each subsystem useful on its own.
 06  Then connect the pieces.
-07  Keep shipping the progress, not just the final result.
+07  Ship the progress, not just the final result.
 ```
 
 ---
 
 ## Build with me
 
-I want this profile to create working relationships—not just collect followers.
+I am especially interested in collaborating around **computer vision & HCI, local AI infrastructure, agent tooling, physical computing, sensors, wearables, and projected interfaces**.
 
-I am especially interested in collaborating with people working on:
-
-- **Computer vision & HCI** — hand tracking, pointer stabilization, gesture design and low-latency interaction
-- **Local AI infrastructure** — voice, memory, privacy-preserving context and always-on systems
-- **Agent tooling** — observability, reliability and better interfaces for long-running agents
-- **Physical computing** — ESP32, sensors, smart-room automation, wearables and projected interfaces
-
-### Open contribution paths
-
-| Issue | What you can help build | Scope |
-| :--- | :--- | :--- |
-| **[#1 · Completion-log retention](https://github.com/amitwjace-creator/codex-session-monitor/issues/1)** | Safe configurable cleanup for long-running installations | Backend + tests |
-| **[#2 · Partial JSONL integration tests](https://github.com/amitwjace-creator/codex-session-monitor/issues/2)** | Reliability coverage for live Codex session writes | Node.js testing |
-| **[#3 · Task-duration trend chart](https://github.com/amitwjace-creator/codex-session-monitor/issues/3)** | An accessible, dependency-free dashboard visualization | Frontend + accessibility |
-
-Each is documented with context, constraints and acceptance criteria. Comment on the issue with your approach, or open a focused pull request.
-
-[![Good first issues](https://img.shields.io/badge/GOOD_FIRST_ISSUES-OPEN-7057ff?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator/codex-session-monitor/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22)
-[![Contributing](https://img.shields.io/badge/CONTRIBUTING-GUIDE-008672?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator/codex-session-monitor/blob/main/CONTRIBUTING.md)
+Good starting points are available in **[codex-session-monitor issues](https://github.com/amitwjace-creator/codex-session-monitor/issues)**.
 
 ---
 
 ## Connect
 
-I am interested in meeting people working on **AI agents, computer vision, HCI, spatial computing, robotics, embedded systems, local AI and unusual human-computer interfaces**.
-
-If you are building something in that world, exploring similar ideas, or think two projects should collide, I would like to hear about it.
-
-[![Instagram](https://img.shields.io/badge/Instagram-@amitbenshachar-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/amitbenshachar/)
-[![GitHub](https://img.shields.io/badge/GitHub-@amitwjace--creator-181717?style=for-the-badge&logo=github)](https://github.com/amitwjace-creator)
-
-**Instagram:** [@amitbenshachar](https://www.instagram.com/amitbenshachar/) · **GitHub:** [@amitwjace-creator](https://github.com/amitwjace-creator)
-
----
+If you are building in **AI agents, computer vision, HCI, spatial computing, robotics, embedded systems, or local AI**, I would like to hear about it.
 
 <div align="center">
+
+[![Instagram](https://img.shields.io/badge/Instagram-@amitbenshachar-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/amitbenshachar/)
+[![GitHub](https://img.shields.io/badge/GitHub-@amitwjace--creator-181717?style=flat-square&logo=github)](https://github.com/amitwjace-creator)
+
+<br>
 
 ### *“Build the interface you wish existed.”*
 
